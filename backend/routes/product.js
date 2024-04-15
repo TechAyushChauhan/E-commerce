@@ -3,6 +3,8 @@ const router = express.Router();
 const multer = require('multer');
 const cors = require('cors');
 const fs = require('fs');
+
+const uploads = multer({ dest: 'uploads/' });
 const productmodel=require('../database/models/productmodel');
 
 
